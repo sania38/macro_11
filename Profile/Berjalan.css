@@ -1,0 +1,287 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(180deg, #f0cc8e, #fff);
+  background-repeat: no-repeat;
+  font-family: poppins;
+  color: #fff;
+  font-size: 24;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #3d405b;
+  height: 60px;
+  z-index: 8;
+}
+
+nav a img {
+  height: 50px;
+}
+nav .container .collapse ul li a {
+  color: white;
+  border-radius: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
+}
+nav .container .collapse ul li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
+}
+
+header {
+  background-color: #3b415b;
+  padding: 0.7em 0 0.7em 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+}
+
+.left {
+  background-color: #3b415b;
+  padding-right: 3px;
+  flex: 1 1 100px;
+  border-radius: 0 20px 20px 0;
+  position: fixed;
+  top: 7;
+  height: 100vh;
+  width: 20%;
+}
+
+.nama {
+  text-align: center;
+  margin-top: 15%;
+  font-size: 24px;
+}
+
+.main .left ul {
+  list-style: none;
+}
+
+.main .left ul li {
+  margin: 10%;
+  padding-top: 8%;
+}
+
+.left .satu {
+  padding: 17px;
+  margin: 0;
+  border-radius: 20px;
+  background-position: center;
+  transition: background-color 0.8 ease-in-out;
+}
+
+.left .satu:hover {
+  background-color: #ff616170;
+}
+
+.left .dua {
+  background-color: #ff6161;
+  padding: 17px;
+  margin: 0;
+  border-radius: 20px;
+  background-position: center;
+  transition: background-color 0.8 ease;
+}
+
+.left .tiga {
+  padding: 17px;
+  margin: 0;
+  border-radius: 20px;
+  background-position: center;
+}
+
+.left .tiga:hover {
+  background-color: #ff616170;
+}
+
+.left .empat {
+  padding: 17px;
+  margin: 0;
+  border-radius: 20px;
+  background-position: center;
+}
+
+.left .empat:hover {
+  background-color: #ff616170;
+}
+
+.main .left ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+main {
+  padding: 3em 0 3em 0;
+  flex: 6 6 150px;
+}
+
+.foto {
+  text-align: center;
+  color: #000;
+  justify-content: center;
+  padding-left: 20%;
+}
+
+.foto img {
+  width: 150px;
+}
+
+.foto .utama {
+  margin-top: -13%;
+  justify-content: center;
+}
+
+.foto h3 {
+  font-size: 18px; /* Ubah ukuran font sesuai keinginan Anda */
+}
+
+.foto h4 {
+  font-size: 14px; /* Ubah ukuran font sesuai keinginan Anda */
+}
+
+.foto ul li {
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.berjalan {
+  display: flex;
+  justify-content: center; /* Membuat elemen berada di tengah secara horizontal */
+  align-items: center; /* Membuat elemen berada di tengah secara vertikal */
+  text-align: center; /* Ratakan teks ke tengah */
+}
+
+.berjalan a {
+  display: block;
+  width: 250px;
+  height: 40px;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  background-color: #73f1b4;
+  border-style: solid;
+  border-radius: 20px;
+  line-height: 40px; /* Vertically center the text inside the button */
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Membagi container menjadi dua kolom dengan lebar yang sama */
+  gap: 100px; /* Jarak antara dua kolom (disesuaikan sesuai kebutuhan) */
+  padding-left: 20%;
+  padding-top: 3%;
+  color: #000;
+  margin: 0 auto; /* Untuk mengatur .box ke tengah halaman */
+  max-width: 800px; /* Sesuaikan lebar maksimum sesuai kebutuhan */
+  justify-content: center;
+}
+
+.box1 img {
+  margin: auto;
+  display: block;
+}
+
+.box2 img {
+  margin: auto;
+  display: block;
+}
+
+.box1 h4 {
+  text-align: center;
+}
+
+.box2 h4 {
+  text-align: center;
+}
+
+.box1,
+.box2 {
+  list-style: none;
+  padding-top: 10%;
+  margin: 0; /* Menghilangkan margin */
+  border: 1px solid #ccc; /* Bingkai */
+  border-radius: 10px; /* Sudut bulat */
+  padding: 20px; /* Ruang dalam kartu */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  background-color: #ffffff; /* Warna latar belakang */
+}
+
+.box1 li,
+.box2 li {
+  text-align: left;
+  margin-bottom: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.box1 p,
+.box2 p {
+  display: block;
+  margin-right: 10px;
+  font-size: 14px;
+
+}
+
+.dalam {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Membagi container menjadi dua kolom dengan lebar yang sama */
+  gap: 20px; /* Jarak antara dua kolom */
+  padding-left: 20%;
+  padding-top: 3%;
+  padding-right: 50px;
+  color: #000;
+  justify-content: center;
+}
+
+.dalam1,
+.dalam2 {
+  list-style: none;
+  padding-top: 10%;
+  margin: 0; /* Menghilangkan margin */
+  text-align: center; /* Mengatur teks menjadi terpusat horizontal */
+}
+
+.dalam1 li,
+.dalam2 li {
+  margin-bottom: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.dalam2 p {
+  font-size: 14px;
+  margin-right: 50px;
+}
+
+.box1 h5{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.box2 h5{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+

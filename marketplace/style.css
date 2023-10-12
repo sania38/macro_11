@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #F0CC8E 0%, rgba(240, 204, 142, 0.91) 0.01%, rgba(240, 204, 142, 0.00) 100%) !important;  
+    
+}
+nav{
+    background-color: #3D405B;
+    height: 60px;
+    z-index: 8;
+    
+}
+
+nav a img {
+    height: 50px;
+}
+nav .container .collapse ul li a{
+    color: white ;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
+}
+nav .container .collapse ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
+
+}
+
+.checked {
+    color: orange;
+  }
+  
+
+/* halaman course */
+
+
+.Course-yang-tersedia .Course-yang-tersedia-content {
+    max-width: 97vw;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+.Course-yang-tersedia .Course-yang-tersedia-content img{
+    margin : 15px 4% 4px 4px;
+
+}
+.Course-yang-tersedia .Course-yang-tersedia-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.67);
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 60px;
+    margin-top: -50px;
+}
+.Course-yang-tersedia .Course-yang-tersedia-content button {
+    margin-top: -70px;
+    margin-left: 190px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #73F1B4;
+    color: black;
+    font-weight: bold;
+}
+.Course-yang-tersedia .Course-yang-tersedia-content h3 {
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+
+.card-course {
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    margin :20px 20px 50px 20px ;
+    box-shadow: -5px -5px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    border: 1px solid black;
+}
+.page-2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harmoni</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        * {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown-container {
+            width: 100%;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+    </style>
+  </head>
+  <body style="background:linear-gradient(120deg, #F0CC8E 0%, rgba(240, 204, 142, 0.91) 0.01%, rgba(240, 204, 142, 0.00) 100%) !important;">    
+
+    <nav style="padding:10px;display:flex;justify-content:space-between;background-color:#3D405B;">
+
+        <div style="margin-right: 15px;margin-left:20px;">
+            <img src="asset/Modern Blue Music Note Logo 5.svg" width="120">
+        </div>
+
+        <div style="display: flex;gap:3rem;">
+            <a href="about.html" style="position: relative;top:15px;color:white;text-decoration:none;">About</a>
+            <a href="komunitas.html" style="position: relative;top:15px;color:white;text-decoration:none;">Komunitas</a>
+            <a href="course.html" style="position: relative;top:15px;color:black;text-decoration:none;">
+                <span style="background-color: white;padding:8px 13px;border-radius:35px">Course</span></a>
+            <a href="marketplace.html" style="position: relative;top:15px;color:white;text-decoration:none;">Marketplace</a>
+            <img src="foto-profile.jpeg" style="border-radius:100%;" width="50">
+        </div>
+        
+    </nav>
+
+    <main style="display: flex;justify-content:stretch;gap:5rem;">
+        <aside style="width:35%;padding:30px;">
+            <div style="baczkground-color: #3D405B;padding:20px;">
+                <br><br><br>
+
+                <div class="dropdown-container">
+                    <button onclick="toggleDropdown()" style="width: 100%;padding:10px;text-align:center;background-color:#F0CC8E;">Angklung</button>
+                    <div class="dropdown-content" id="dropdown" style="width: 100%;">
+                        <a href="#" style="width: 100%;background-color:#79c49f">Pengenalan Dasar Angklung</a>
+                        <a href="#" style="width: 100%;background-color:#79c49f">-</a>
+                        <a href="#" style="width: 100%;background-color:#79c49f">-</a>
+                        <a href="#" style="width: 100%;background-color:#79c49f">-</a>
+                    </div>
+                </div>
+
+                <div class="dropdown-container">
+                    <button  style="width: 100%;padding:10px;text-align:center;background-color:#F0CC8E;">Gamelan</button>
+                </div>
+                <div class="dropdown-container">
+                    <button  style="width: 100%;padding:10px;text-align:center;background-color:#F0CC8E;">Rebana</button>
+                </div>
+                <div class="dropdown-container">
+                    <button  style="width: 100%;padding:10px;text-align:center;background-color:#F0CC8E;">Kecapi</button>
+                </div>
+                
+
+            </div>
+        </aside>
+
+        <div id="content" style="width: 65%;padding:30px;">
+            
+
+            <center>
+                <h3>Bergabunglah dengan kami</h3>
+            </center>
+
+                <br><br>
+
+                <div style="background-color: salmon;padding:20px;border-radius:10px;">
+                    <p>
+                        Introduction <br><br>
+
+                        Selamat datang di kursus online eksklusif kami yang memperkenalkan Anda 
+                        pada keindahan dan kekayaan alat musik tradisional Indonesia, Angklung. 
+                        Angklung merupakan alat musik unik dan bersejarah yang terbuat dari bahan 
+                        bambu sehingga menghasilkan suara yang khas dan merdu. Kursus ini dirancang 
+                        khusus untuk memperkenalkan Anda pada dunia Angklung, mulai dari kekayaan 
+                        sejarahnya hingga cara memainkannya dengan ahli.
+
+                        <br><br>
+
+                        Di kelas ini, Anda akan dipandu oleh instruktur berpengalaman yang akan membantu Anda 
+                        memahami dasar-dasar Angklung, teknik bermain yang benar, hingga cara memainkan lagu-lagu 
+                        daerah yang indah. Selain itu, Anda juga akan belajar tentang perawatan Angklung yang benar 
+                        agar alat musik ini tetap dalam kondisi optimal. Apakah Anda seorang pemula yang ingin memulai 
+                        perjalanan musik Anda atau seorang musisi berpengalaman yang ingin menjelajahi instrumen baru, 
+                        kursus ini cocok untuk Anda. Dapatkan akses  materi pembelajaran berkualitas tinggi, 
+                        video instruksional interaktif, dan forum komunitas untuk berinteraksi dengan penggemar Angklung lainnya. 
+                        Bergabunglah bersama kami sekarang dan rasakan keajaiban musik tradisional Angklung. 
+                        Mari kita jelajahi bersama keindahan budaya Indonesia melalui suara Angklung yang memukau. 
+                        Daftar sekarang dan mulailah perjalanan musik menakjubkan Anda  bersama kami!
+                    </p>
+                </div>
+
+                <br><br>
+
+                    <center>
+                        <button style="border: 1px solid #63b990;outline:none;background-color:#73F1B4;padding:10px;border-radius:30px;">
+                            <b>Lanjutkan</b>
+                        </button>
+                    </center>
+
+
+        </div>
+    </main>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+    </script>
+    
+
+  </body>
+</html>

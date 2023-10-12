@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #F0CC8E 0%, rgba(240, 204, 142, 0.91) 0.01%, rgba(240, 204, 142, 0.00) 100%) !important;  
+    background-repeat: no-repeat;
+    
+}
+nav{
+    background-color: #3D405B;
+    height: 60px;
+    z-index: 8;
+    
+}
+
+nav a img {
+    height: 60px;
+}
+nav .container .collapse ul li a{
+    color: white ;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
+}
+nav .container .collapse ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
+
+}
+
+.Course-yang-tersedia .Course-yang-tersedia-content {
+    max-width: 97vw;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.Course-yang-tersedia .Course-yang-tersedia-content img{
+    margin : 10px 4% 4px 80px;
+
+}
+
+.card-course {
+
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    margin :10px 20px 50px 20px ;
+   
+    
+}
+.checked {
+    color: orange;
+  }
+
+.page-2{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.Deskripsi .Deskripsi-content{
+    max-width: 97vw;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 21%;
+}
+
+.startext{
+    position: relative;
+
+}
+
+.Deskripsi2{
+    text-align: center;
+}
+
+.Deskripsi3{
+    max-width: 97vw;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 21%;
+}

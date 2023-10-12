@@ -1,0 +1,334 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(180deg, #f0cc8e, #fff);
+  background-repeat: no-repeat;
+  font-family: poppins;
+  color: #fff;
+  font-size: 24;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+
+
+}
+
+/* *{
+  border: 1px #000 solid
+} */
+
+nav {
+  background-color: #3d405b;
+  height: 60px;
+  z-index: 8;
+}
+
+nav a img {
+  height: 50px;
+}
+nav .container .collapse ul li a {
+  color: white;
+  border-radius: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
+}
+nav .container .collapse ul li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
+}
+
+header {
+  background-color: #3b415b;
+  padding: 0.7em 0 0.7em 0;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  background-color: #3b415b;
+  padding-right: 3px;
+  flex: 1 1 100px;
+  border-radius: 0 20px 20px 0;
+}
+
+.nama {
+  text-align: center;
+  margin-top: 15%;
+  font-size: 24px;
+}
+
+.main .left ul {
+  list-style: none;
+}
+
+.main .left ul li {
+  margin: 10%;
+  padding-top: 8%;
+}
+
+.left .satu {
+  padding: 17px;
+  margin: 0;
+  border-radius: 20px;
+  background-position: center;
+  transition: background-color 0.8 ease-in-out;
+}
+
+.left .satu:hover {
+  background-color: #ff616170;
+}
+
+.left .dua {
+  padding: 17px;
+  margin: 0;
+  border-radius: 20px;
+  background-position: center;
+  transition: background-color 0.8 ease;
+}
+
+.left .dua:hover {
+  background-color: #ff616170;
+}
+
+.left .tiga {
+  padding: 17px;
+  margin: 0;
+  border-radius: 20px;
+  background-position: center;
+}
+
+.left .tiga:hover {
+  background-color: #ff616170;
+}
+
+.left .empat {
+  background-color: #ff6161;
+  padding: 17px;
+  margin: 0;
+  border-radius: 20px;
+  background-position: center;
+}
+
+.main .left ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+main {
+  padding: 3em 0 3em 0;
+  flex: 6 6 150px;
+}
+
+.berjalan {
+  display: flex;
+  justify-content: left; /* Membuat elemen berada di tengah secara horizontal */
+  margin-left: 10%;
+}
+
+.berjalan a {
+  width: 300px;
+  height: 40px;
+  text-decoration: none;
+  color: #000;
+  background-color: #73f1b4;
+  border-style: solid;
+  border-radius: 20px;
+  line-height: 40px; /* Vertically center the text inside the button */
+  padding: 0; /* Menghilangkan padding yang tidak diperlukan */
+  text-align: center;
+  display: flex; /* Menggunakan flexbox untuk menengahkan vertikal dan horizontal */
+  align-items: center; /* Menengahkan secara vertikal */
+  justify-content: center; /* Menengahkan secara horizontal */
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Membagi container menjadi dua kolom dengan lebar yang sama */
+  gap: 100px; /* Jarak antara dua kolom (disesuaikan sesuai kebutuhan) */
+  padding-left: 20%;
+  padding-right: 68%;
+  padding-top: 3%;
+  color: #000;
+  margin: auto;
+  margin-left: -10%;
+}
+
+.box1 p {
+  text-align: center;
+}
+
+.box2 p {
+  text-align: center;
+}
+
+.box3 p {
+  text-align: center;
+}
+
+.box1,
+.box2,
+.box3 {
+  display: flex;
+  list-style: none;
+  margin-top: 0px; /* Menghilangkan margin */
+  border: 1px solid #000000; /* Bingkai */
+  border-radius: 10px; /* Sudut bulat */
+  padding: 20px; /* Ruang dalam kartu */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  background-color: #ffffff00; /* Warna latar belakang */
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.button {
+  background-color: #73f1b4;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #000;
+  width: 100px;
+  height: 50px;
+}
+
+.box1 li,
+.box2 li,
+.box3 li {
+  text-align: left;
+  margin-bottom: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.box1 p,
+.box2 p,
+.box3 p {
+  display: block;
+  margin-right: 10px;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.sendiri {
+  display: flex;
+  margin-top: 4%;
+  margin-left: 10%;
+  color: #000;
+  font-size: 18px;
+}
+
+.beli {
+  display: grid;
+  column-gap: 50px; /* Ubah menjadi column-gap untuk jarak antar kolom */
+  grid-template-rows: 1fr 1fr; /* Menyusun dalam dua baris */
+  padding: 10px;
+  row-gap: 20px;
+}
+
+.beli1,
+.beli2 {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 80%;
+  height: 130px;
+  margin-left: 9.5%;
+  border-radius: 20px;
+}
+
+.gambar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gambar img {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+.gambar h6 {
+  color: #000;
+  display: flex;
+  padding-top: 5px;
+}
+
+.beli1 p,
+.beli2 p {
+  color: #000;
+}
+
+.beli1 h5,
+.beli2 h5 {
+  color: #000;
+}
+
+.detail {
+  margin-top: 10px;
+}
+
+.detail,
+.isi {
+  display: flex;
+  justify-content: center; /* Mengatur jarak antara elemen-elemen di samping */
+  align-items: center; /* Menyusun elemen-elemen ke atas */
+  font-size: 16px;
+
+}
+
+.detail p {
+  color: #000;
+  margin: 0 50px 0 50px ;
+}
+
+.isi h5 {
+  color: #000;
+  margin: 0 50px 0 50px ;
+}
+
+.lihat{
+  display: flex;
+  width: 300px;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-right: 8%;
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+}
+
+.lihat :hover{
+  color: blue;
+  cursor: pointer;
+}
+
+.button2{
+  background-color: #73f1b4;
+  border: none;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 200px;
+  margin-top: 10%;
+}
