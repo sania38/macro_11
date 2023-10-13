@@ -20,9 +20,15 @@ nav {
   z-index: 999;
 }
 
+.navbar-nav li{
+  margin-top: 5px;
+}
+
 nav a img {
   height: 50px;
+  margin-top: -20px;
 }
+
 nav .container .collapse ul li a {
   color: white;
   border-radius: 20px;
