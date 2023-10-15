@@ -8,8 +8,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0px;
-
-
 }
 
 /* *{
@@ -125,7 +123,7 @@ main {
 
 .berjalan {
   display: flex;
-  justify-content: left; /* Membuat elemen berada di tengah secara horizontal */
+  justify-content: left;
   margin-left: 10%;
 }
 
@@ -137,24 +135,22 @@ main {
   background-color: #73f1b4;
   border-style: solid;
   border-radius: 20px;
-  line-height: 40px; /* Vertically center the text inside the button */
-  padding: 0; /* Menghilangkan padding yang tidak diperlukan */
+  line-height: 40px;
+  padding: 0;
   text-align: center;
-  display: flex; /* Menggunakan flexbox untuk menengahkan vertikal dan horizontal */
-  align-items: center; /* Menengahkan secara vertikal */
-  justify-content: center; /* Menengahkan secara horizontal */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Membagi container menjadi dua kolom dengan lebar yang sama */
-  gap: 100px; /* Jarak antara dua kolom (disesuaikan sesuai kebutuhan) */
-  padding-left: 20%;
-  padding-right: 68%;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px;
   padding-top: 3%;
   color: #000;
-  margin: auto;
-  margin-left: -10%;
+  align-items: center;
+  justify-content: center;
 }
 
 .box1 p {
@@ -174,12 +170,12 @@ main {
 .box3 {
   display: flex;
   list-style: none;
-  margin-top: 0px; /* Menghilangkan margin */
-  border: 1px solid #000000; /* Bingkai */
-  border-radius: 10px; /* Sudut bulat */
-  padding: 20px; /* Ruang dalam kartu */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-  background-color: #ffffff00; /* Warna latar belakang */
+  margin-top: 0px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff00;
   width: 250px;
   height: 30px;
   text-align: center;
@@ -230,8 +226,8 @@ main {
 
 .beli {
   display: grid;
-  column-gap: 50px; /* Ubah menjadi column-gap untuk jarak antar kolom */
-  grid-template-rows: 1fr 1fr; /* Menyusun dalam dua baris */
+  column-gap: 50px;
+  grid-template-rows: 1fr 1fr;
   padding: 10px;
   row-gap: 20px;
 }
@@ -285,23 +281,22 @@ main {
 .detail,
 .isi {
   display: flex;
-  justify-content: center; /* Mengatur jarak antara elemen-elemen di samping */
-  align-items: center; /* Menyusun elemen-elemen ke atas */
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
-
 }
 
 .detail p {
   color: #000;
-  margin: 0 50px 0 50px ;
+  margin: 0 50px 0 50px;
 }
 
 .isi h5 {
   color: #000;
-  margin: 0 50px 0 50px ;
+  margin: 0 50px 0 50px;
 }
 
-.lihat{
+.lihat {
   display: flex;
   width: 300px;
   font-size: 18px;
@@ -312,23 +307,12 @@ main {
   list-style: none;
 }
 
-.lihat :hover{
+.lihat :hover {
   color: blue;
   cursor: pointer;
 }
 
-.button2{
-  background-color: #73f1b4;
-  border: none;
-  color: black;
-  padding: 15px;
-  text-align: center;
+.lihat a{
   text-decoration: none;
-  display: block;
-  font-size: 16px;
-  margin: 10px 0;
-  cursor: pointer;
-  border-radius: 20px;
-  width: 200px;
-  margin-top: 10%;
+  font-size: 15px;
 }
