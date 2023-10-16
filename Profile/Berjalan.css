@@ -1,84 +1,95 @@
-body {
-  height: 100vh;
-  background-image: linear-gradient(180deg, #f0cc8e, #fff);
-  background-repeat: no-repeat;
-  font-family: poppins;
-  color: #fff;
-  font-size: 24;
-  display: flex;
-  flex-direction: column;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  /* /border: 1px black solid; */
 }
 
-nav {
-  background-color: #3d405b;
-  height: 60px;
-  z-index: 8;
+body {
+  background-image: linear-gradient(180deg, #f0cc8e, #fff);
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-nav a img {
-  height: 50px;
-}
-nav .container .collapse ul li a {
-  color: white;
-  border-radius: 20px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
-}
-nav .container .collapse ul li a:hover {
-  background-color: white;
-  color: black;
-  border-radius: 20px;
-  text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
+main {
+  width: 100%;
+  height: auto;
 }
 
-header {
-  background-color: #3b415b;
-  padding: 0.7em 0 0.7em 0;
+/* navabr */
+.header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-}
-
-.main {
-  display: flex;
-  height: 100vh;
-  margin-top: 60px;
-  width: 100%;
-  height: auto;
-  margin-top: 80px;
-}
-
-.left {
+  padding: 6px 5%;
   background-color: #3b415b;
-  padding-right: 3px;
-  flex: 1 1 100px;
-  border-radius: 0 20px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.navbar {
+  margin-left: 40%;
+}
+
+.navbar a {
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 4rem;
+  text-decoration: none;
+  transition: background-color 0.8 ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: #fff;
+  border-radius: 20px;
+  color: black;
+  padding: 5px;
+}
+/* navbar end */
+
+/* side bar */
+.left {
   position: fixed;
-  top: 7;
+  background-color: #3b415b;
+  left: 0;
   height: 100vh;
   width: 20%;
+  z-index: 99;
 }
 
-.nama {
-  text-align: center;
-  margin-top: 15%;
-  font-size: 24px;
+.container-sidebar {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 15%;
+  padding-top: 30%;
 }
 
-.main .left ul {
-  list-style: none;
+.container-sidebar a {
+  color: #fff;
+  margin: 20px;
+  width: 70%;
 }
 
-.main .left ul li {
+.container-sidebar h4 {
+  color: #fff;
   margin: 10%;
-  padding-top: 8%;
+  width: 70%;
+  font-size: 30px;
 }
 
-.left .satu {
+.satu {
   padding: 17px;
   margin: 0;
   border-radius: 20px;
@@ -86,11 +97,11 @@ header {
   transition: background-color 0.8 ease-in-out;
 }
 
-.left .satu:hover {
+.satu:hover {
   background-color: #ff616170;
 }
 
-.left .dua {
+.dua {
   background-color: #ff6161;
   padding: 17px;
   margin: 0;
@@ -99,188 +110,118 @@ header {
   transition: background-color 0.8 ease;
 }
 
-.left .tiga {
+.tiga {
   padding: 17px;
   margin: 0;
   border-radius: 20px;
   background-position: center;
+  transition: background-color 0.8 ease;
 }
 
-.left .tiga:hover {
+.tiga:hover {
   background-color: #ff616170;
 }
 
-.left .empat {
+.empat {
   padding: 17px;
   margin: 0;
   border-radius: 20px;
   background-position: center;
+  transition: background-color 0.8 ease;
 }
 
-.left .empat:hover {
+.empat:hover {
   background-color: #ff616170;
 }
 
-.main .left ul a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
+/* sidebar end */
+
+.right {
+  position: fixed;
+  justify-content: end;
+  right: 0;
+  top: 7%;
+  height: 100vh;
+  width: 80%;
+  z-index: 99;
 }
 
-main {
-  padding: 3em 0 3em 0;
-  flex: 6 6 150px;
+.container-foto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .foto {
-  text-align: center;
-  color: #000;
+  display: flex;
   justify-content: center;
-  padding-left: 20%;
+  flex-direction: column;
 }
 
-.foto img {
-  width: 150px;
-}
-
-.foto .utama {
-  margin-top: -13%;
+.gambar {
+  display: flex;
   justify-content: center;
+  width: 100%;
+  padding-top: 2%;
 }
 
-.foto h3 {
-  font-size: 18px; /* Ubah ukuran font sesuai keinginan Anda */
+.gambar img {
+  display: flex;
+  flex-direction: column;
+  width: auto;
 }
 
-.foto h4 {
-  font-size: 14px; /* Ubah ukuran font sesuai keinginan Anda */
-}
-
-.foto ul li {
-  text-decoration: none;
-  list-style: none;
+.keterangan {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: 10px;
+  align-items: center;
+  max-width: 100%;
+  padding-top: 2%;
 }
 
+/* bawah */
 .berjalan {
-  display: flex;
-  justify-content: center; /* Membuat elemen berada di tengah secara horizontal */
-  align-items: center; /* Membuat elemen berada di tengah secara vertikal */
-  text-align: center; /* Ratakan teks ke tengah */
+  box-sizing: border-box;
+  padding-top: 2%;
 }
 
-.berjalan a {
-  display: block;
-  width: 250px;
-  height: 40px;
-  text-decoration: none;
-  list-style: none;
-  color: #000;
-  background-color: #73f1b4;
-  border-style: solid;
+.container-bawah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-berjalan {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-berjalan figure {
+  border: 2px #104c70 solid;
+  display: inline-block;
+  width: 30vh;
+  margin-left: 20px;
+  padding: 20px;
   border-radius: 20px;
-  line-height: 40px; /* Vertically center the text inside the button */
+  margin: 40px;
 }
 
-.box {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Membagi container menjadi dua kolom dengan lebar yang sama */
-  gap: 100px; /* Jarak antara dua kolom (disesuaikan sesuai kebutuhan) */
-  padding-left: 20%;
-  padding-top: 3%;
-  color: #000;
-  margin: 0 auto; /* Untuk mengatur .box ke tengah halaman */
-  max-width: 800px; /* Sesuaikan lebar maksimum sesuai kebutuhan */
-  justify-content: center;
-}
-
-.box1 img {
-  margin: auto;
-  display: block;
-}
-
-.box2 img {
-  margin: auto;
-  display: block;
-}
-
-.box1 h4 {
-  text-align: center;
-}
-
-.box2 h4 {
-  text-align: center;
-}
-
-.box1,
-.box2 {
-  list-style: none;
-  padding-top: 10%;
-  margin: 0; /* Menghilangkan margin */
-  border: 1px solid #ccc; /* Bingkai */
-  border-radius: 10px; /* Sudut bulat */
-  padding: 20px; /* Ruang dalam kartu */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-  background-color: #ffffff; /* Warna latar belakang */
-}
-
-.box1 li,
-.box2 li {
-  text-align: left;
-  margin-bottom: 10px;
-  text-decoration: none;
-  list-style: none;
-}
-
-.box1 p,
-.box2 p {
-  display: block;
-  margin-right: 10px;
-  font-size: 14px;
-
-}
-
-.dalam {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Membagi container menjadi dua kolom dengan lebar yang sama */
-  gap: 20px; /* Jarak antara dua kolom */
-  padding-left: 20%;
-  padding-top: 3%;
-  padding-right: 50px;
-  color: #000;
-  justify-content: center;
-}
-
-.dalam1,
-.dalam2 {
-  list-style: none;
-  padding-top: 10%;
-  margin: 0; /* Menghilangkan margin */
-  text-align: center; /* Mengatur teks menjadi terpusat horizontal */
-}
-
-.dalam1 li,
-.dalam2 li {
-  margin-bottom: 10px;
-  text-decoration: none;
-  list-style: none;
-}
-
-.dalam2 p {
-  font-size: 14px;
-  margin-right: 50px;
-}
-
-.box1 h5{
+.img-berjalan img {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  margin-top: 10px;
+  padding-left: 5%;
+  max-width: 100%;
 }
 
-.box2 h5{
+.img-berjalan figcaption {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 
+.img-berjalan figcaption i {
+  margin-right: 7px;
+}
