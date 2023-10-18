@@ -32,7 +32,13 @@ nav .container .collapse ul li a:hover {
     color: black;
     border-radius: 20px;
     text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
-
+}
+nav .collapse a img {
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: 20px;
 }
 
 
@@ -117,11 +123,6 @@ nav .container .collapse ul li a:hover {
     width: 200px;
     border-radius: 20px;
     align-items: center;
-}
-
-.mentoring .row .btn-detail a{
-    color: white;
-    text-decoration: none;
 }
 
 .footer {
@@ -249,6 +250,77 @@ nav .container .collapse ul li a:hover {
     justify-content: center;
     gap: 50px;
 }
+.Karaousel {
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+
+.Karaousel .carousel-inner .carousel-item  .karousel-1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0);
+    justify-content: center;
+    
+    
+}
+.Karaousel .carousel-inner .carousel-item .karousel-1 .isi-k1 {
+    width: 480px;
+    height: 480px;
+    background-color: #EECA8D;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid #3D405B;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Karaousel .carousel-inner .carousel-item  .karousel-1 .isi-k1 img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Karaousel .carousel-inner .carousel-item .karousel-1 .isi-k1 h5 {
+    font-size: 20px;
+    margin: -60px 0 -20px 0 ; 
+    font-weight: bold;
+    
+}
+
+.Karaousel .carousel-inner .carousel-item .karousel-1 .isi-k1 h6 {
+    font-size: 14px;
+    margin: 0; /* Menghilangkan margin bawaan pada elemen h6 */
+}
+
+.Karaousel .carousel-inner .carousel-item .karousel-1 .isi-k1 p {
+    font-size: 14px;
+    margin: 30px 50px 0 50px; /* Menghilangkan margin bawaan pada elemen p */
+}
+.Karaousel .carousel h1 {
+    font-size: 50px;
+    font-weight:bold;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -50px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.378);
+
+}
+.Course-yang-tersedia .page-2 .card-course .card-body .parent .d-flex img {
+    width: 25px;
+    height: 25px;
+}
+.Course-yang-tersedia .page-2 .card-course .card-body img {
+   
+}
+
+
+
+
 
 
 

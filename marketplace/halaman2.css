@@ -32,6 +32,16 @@ nav .container .collapse ul li a:hover {
 
 }
 
+nav .collapse img {
+    margin: -10px 0px -10px 20px;
+    width: 40px;
+    height: 40px;
+}
+.Course-yang-tersedia{
+    min-width: 100vw;
+    min-height: 88vh;
+}
+
 .Course-yang-tersedia .Course-yang-tersedia-content {
     max-width: 97vw;
     text-align: center;
@@ -64,8 +74,8 @@ nav .container .collapse ul li a:hover {
 
 .Deskripsi .Deskripsi-content{
     max-width: 97vw;
-    text-align: left;
-    margin-top: 200px;
+    text-align: justify;
+    margin-top: 250px;
     margin-left: 21%;
 }
 
@@ -74,13 +84,41 @@ nav .container .collapse ul li a:hover {
 
 }
 
+.harga{
+    margin-left: 60%;
+    margin-top: -9%;
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+
+
 .Deskripsi2{
     text-align: center;
+    margin-top: 7%;
 }
+
 
 .Deskripsi3{
     max-width: 97vw;
-    text-align: left;
+    text-align: justify;
     margin-top: 30px;
     margin-left: 21%;
+}
+
+.Deskrispi4{
+    margin-left: 21%;
+    max-width: 60vw;
+    text-align: justify;
+    word-spacing: 7px;
+}
+
+.buttonbeli button{
+    border-radius: 10px;
+    padding: 10px 60px;
+    background-color: #73F1B4;
+    border: none;
+    margin-top: 20px;
+    color: black;
+
 }

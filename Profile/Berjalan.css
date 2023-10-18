@@ -24,36 +24,33 @@ main {
 }
 
 /* navabr */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 6px 5%;
-  background-color: #3b415b;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 100;
+nav {
+  background-color: #3d405b;
+  height: 60px;
+  z-index: 999;
 }
 
-.navbar {
-  margin-left: 40%;
+nav a img {
+  height: 50px;
 }
-
-.navbar a {
-  font-size: 1rem;
-  color: #fff;
-  margin-left: 4rem;
-  text-decoration: none;
-  transition: background-color 0.8 ease-in-out;
-}
-
-.navbar a:hover {
-  background-color: #fff;
+nav .container .collapse ul li a {
+  color: white;
   border-radius: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
+}
+
+nav .container .collapse ul li a:hover {
+  background-color: white;
   color: black;
-  padding: 5px;
+  border-radius: 20px;
+  text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
+}
+nav .collapse a img {
+  width: 40px;
+  height: 40px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: 20px;
 }
 /* navbar end */
 
@@ -80,6 +77,7 @@ main {
   color: #fff;
   margin: 20px;
   width: 70%;
+  text-decoration: none;
 }
 
 .container-sidebar h4 {
@@ -137,7 +135,7 @@ main {
 /* sidebar end */
 
 .right {
-  position: fixed;
+  position: absolute;
   justify-content: end;
   right: 0;
   top: 7%;

@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frequently Ask and Question About Course</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <style>
-    body{
-      background:#F0CC8E;
+    body {
+      background: #F0CC8E;
       background-repeat: no-repeat;
     }
 
-    h1{
+    h1 {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-weight: 800;
       font-size: 48px;
@@ -25,104 +27,172 @@
       width: 100%;
       line-height: 50px;
       text-align: center;
-
     }
 
-h5{
-  text-align: center;
-}  
+    h5 {
+      text-align: center;
+    }
 
-nav{
-    background-color: #3D405B;
-    height: 60px;
-    z-index: 8;
-    
-}
+    nav {
+      background-color: #3d405b;
+      height: 60px;
+      z-index: 999;
+    }
 
-nav a img {
-    height: 50px;
-}
-nav .container .collapse ul li a{
-    color: white ;
-    border-radius: 20px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
-}
+    nav a img {
+      height: 50px;
+    }
 
-nav .container .collapse ul li a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 20px;
-    text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
-
-}
+    nav .container .collapse ul li a {
+      color: white;
+      border-radius: 20px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
+    }
 
 
+    nav .container .collapse ul li a:hover {
+      background-color: white;
+      color: black;
+      border-radius: 20px;
+      text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
+    }
+
+    nav .collapse a img {
+      width: 40px;
+      height: 40px;
+      margin-top: -10px;
+      margin-bottom: -10px;
+      margin-left: 20px;
+    }
+
+    .acc-kontainer {
+      width: 100%;
+      margin: auto;
+    }
+
+    .acc-kontainer .acc-body {
+      width: 98%;
+      width: calc(100% - 20px);
+      margin: 0 auto;
+      height: 0;
+      color: rgba(0, 0, 0, 0);
+      ;
+      background-color: rgba(14, 2, 2, 0.2);
+      line-height: 28px;
+      padding: 0 20px;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+
+    .acc-kontainer label {
+      cursor: pointer;
+      background-color: rgba(10, 2, 2, 0.1);
+      border-bottom: 1px solid rgba(5, 1, 1, 0.1);
+      display: block;
+      padding: 15px;
+      width: 100%;
+      color: hsl(0, 14%, 4%);
+      font-weight: 400;
+      box-sizing: border-box;
+      z-index: 100;
+    }
+
+    .acc-kontainer input {
+      display: none;
+    }
+
+    .acc-kontainer label:before {
+      font-family: 'FontAwesome';
+      content: '\f067';
+      font-weight: bolder;
+      float: right;
+    }
+
+    .acc-kontainer input:checked+label {
+      background-color: rgba(8, 3, 3, 0.15);
+    }
+
+    .acc-kontainer input:checked+label:before {
+      font-family: 'FontAwesome';
+      content: '\f00d';
+      transition: 0.5s;
+    }
+
+    .acc-kontainer input:checked~.acc-body {
+      height: auto;
+      color: #080303;
+      font-size: 16px;
+      padding: 20px;
+      transition: 0.5s;
+    }
   </style>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg" style="position: fixed; left: 0; top: 0; width: 100%;">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="../asset/about-img/Modern Blue Music Note Logo 5.svg" alt="" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"><img src="/asset/marketplace-img/Modern Blue Music Note Logo 5.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item ms-2">
-            <a class="nav-link" aria-current="page" href="/About/index2.html">About</a>
+      <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
+        <ul class="navbar-nav  ">
+          <li class="nav-item ms-2  ">
+            <a class="nav-link  " aria-current="page" href="/About/index2.html">About</a>
           </li>
-          <li class="nav-item ms-2">
-            <a class="nav-link" href="/Komunitas/komunitas.html">Komunitas</a>
+          <li class="nav-item ms-2 ">
+            <a class="nav-link " href="/Komunitas/komunitas.html">Komunitas</a>
           </li>
-          <li class="nav-item ms-2">
-            <a class="nav-link" href="/About/hal-course.html">Course</a>
+          <li class="nav-item ms-2 ">
+            <a class="nav-link " href="/About/hal-course.html">Course</a>
           </li>
-          <li class="nav-item ms-2">
-            <a class="nav-link" href="../marketplace/index.html">Marketplace</a>
+          <li class="nav-item ms-2 ">
+            <a class="nav-link " href="/marketplace/index.html">Marketplace</a>
           </li>
-          <li class="nav-item ms-5">
-            <a class="nav-link" href="../Profile/profile.html"><img src="../asset/about-img/Ellipse 19.png" alt="" /></a>
-          </li>
-        </ul>
+          <a class="nav-link " href="/Profile/profile.html"><img src="/asset/Profile-img/PP.png" alt=""></a>
+
       </div>
     </div>
   </nav>
 
-<div>
+  <div>
     <h1>Komunitas Seniman Musik Indonesia</h1>
-    <h5>Komunitas sekolah musik, tempatnya berbagi, bertanya dan berdiskusi 
+    <h5>Komunitas sekolah musik, tempatnya berbagi, bertanya dan berdiskusi
       dengan seniman musik lewat forum online</h5>
-        <form class="text-center">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-  
-      
-    <div class="acc-kontainer">          
-        <div>
-          <input type="radio" name="acc" id="acc1" checked>
-          <label for="acc1"><i class="fa fa-question"></i> Apa keuntungan yang saya dapatkan jika bergabung?</label>
-          <div class="acc-body">
-            Keuntungan yang bisa Anda dapatkan ketika bergabung di kursus ini adalah Anda bisa belajar 1-on 1 bersama mentor terbaik kami, biaya kursus yang murah, fleksibel bisa di mana dan kapanpun.
-          </div>
-        </div>
-      <div>
-          <input type="radio" name="acc" id="acc2">
-          <label for="acc2"><i class="fa fa-question"></i> Bagaimana mekanisme agar saya bisa bergabung?</label>
-          <div class="acc-body">
-            Pendaftaran bisa dilakukan lewat website yang tersedia.
-          </div>
-        </div>
-      <div>
-          <input type="radio" name="acc" id="acc3">
-          <label for="acc3"><i class="fa fa-question"></i> Apa saja syarat untuk bisa bergabung dengan kursus ini?</label>
-          <div class="acc-body">
-            Memiliki minat di bidang musik dan berusaha untuk menyelesaikan kursus.
-        </div>
-</div>
+    <form class="text-center">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
 
-<div class="text-center">
-  <button type="button" class="btn btn-success btn-lg">Email us</button>
-</div>
+
+    <div class="acc-kontainer">
+      <div>
+        <input type="radio" name="acc" id="acc1" checked>
+        <label for="acc1"><i class="fa fa-question"></i> Apa keuntungan yang saya dapatkan jika bergabung?</label>
+        <div class="acc-body">
+          Keuntungan yang bisa Anda dapatkan ketika bergabung di kursus ini adalah Anda bisa belajar 1-on 1 bersama
+          mentor terbaik kami, biaya kursus yang murah, fleksibel bisa di mana dan kapanpun.
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="acc" id="acc2">
+        <label for="acc2"><i class="fa fa-question"></i> Bagaimana mekanisme agar saya bisa bergabung?</label>
+        <div class="acc-body">
+          Pendaftaran bisa dilakukan lewat website yang tersedia.
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="acc" id="acc3">
+        <label for="acc3"><i class="fa fa-question"></i> Apa saja syarat untuk bisa bergabung dengan kursus ini?</label>
+        <div class="acc-body">
+          Memiliki minat di bidang musik dan berusaha untuk menyelesaikan kursus.
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button type="button" class="btn btn-success btn-lg">Email us</button>
+      </div>
 </body>
+
 </html>

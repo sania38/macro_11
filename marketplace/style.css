@@ -30,6 +30,11 @@ nav .container .collapse ul li a:hover {
     text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
 
 }
+nav .collapse img {
+    margin: -10px 0px -10px 20px;
+    width: 40px;
+    height: 40px;
+}
 
 .checked {
     color: orange;
@@ -37,7 +42,10 @@ nav .container .collapse ul li a:hover {
   
 
 /* halaman course */
+.judulcourse1{
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
 
+}
 
 .Course-yang-tersedia .Course-yang-tersedia-content {
     max-width: 97vw;
@@ -86,5 +94,4 @@ nav .container .collapse ul li a:hover {
     justify-content: center;
     gap: 50px;
 }
-
 

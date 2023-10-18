@@ -1,0 +1,222 @@
+nav {
+  background-color: #3d405b;
+  height: 60px;
+  z-index: 8;
+}
+
+nav a img {
+  height: 50px;
+}
+nav .container .collapse ul li a {
+  color: white;
+  border-radius: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
+}
+nav .container .collapse ul li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
+}
+nav .collapse img {
+  margin: -10px 0px -10px 20px;
+  width: 40px;
+  height: 40px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    180deg,
+    #f0cc8e 0%,
+    rgba(240, 204, 142, 0.91) 0.01%,
+    rgba(240, 204, 142, 0) 100%
+  ) !important;
+  height: 100vh;
+  width: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.course-tersedia {
+  min-width: 100vw;
+  min-height: 80vh;
+}
+
+.containerbox {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 35px;
+}
+
+.box-right {
+  padding: 30px 25px;
+  margin-top: 10%;
+  background-color: #d3c6ad;
+  border-radius: 15px;
+  height: 250px;
+}
+.box-right2 {
+  padding: 30px 25px;
+  background-color: #d3c6ad;
+  border-radius: 15px;
+  height: 200px;
+}
+
+.judul {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.box-left {
+  padding: 20px 50px;
+  background-color: #d3c6ad;
+  margin-top: 10%;
+  margin-left: 50px;
+  margin-right: 20px;
+  width: 350px;
+  border-radius: 15px;
+}
+
+.judulcourse {
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+}
+.icon {
+  margin-left: 200px;
+  margin-top: -1%;
+}
+.isi {
+  text-align: left;
+  margin-left: 80%;
+  padding-right: 400px;
+  margin-top: -55%;
+  display: flex;
+  flex-direction: row;
+  width: 200%;
+  font-weight: bold;
+
+  /* width: 100%; */
+}
+.alamat {
+  margin-top: 25px;
+  text-align: justify;
+}
+
+.vouchertext {
+  text-align: center;
+  margin-top: 25px;
+}
+.textmuted {
+  color: #000000;
+}
+
+.bg-green {
+  background-color: #d4f8f2;
+  color: #06e67a;
+  padding: 3px 0;
+  display: inline;
+  border-radius: 25px;
+  font-size: 11px;
+}
+
+.p-blue {
+  font-size: 14px;
+  color: #1976d2;
+}
+
+.fas.fa-circle {
+  font-size: 12px;
+}
+
+.p-org {
+  font-size: 14px;
+  color: #fbc02d;
+}
+
+.h7 {
+  font-size: 15px;
+}
+
+.h8 {
+  font-size: 16px;
+}
+
+.h9 {
+  font-size: 10px;
+}
+
+.bg-blue {
+  background-color: #dfe9fc9c;
+  border-radius: 5px;
+}
+
+.form-control {
+  box-shadow: none !important;
+}
+
+.card input::placeholder {
+  font-size: 14px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+input.card {
+  position: relative;
+}
+
+.far.fa-credit-card {
+  position: absolute;
+  top: 10px;
+  padding: 0 15px;
+}
+
+.fas,
+.far {
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  box-shadow: none;
+  height: 40px;
+  padding: 11px;
+}
+
+.bg.btn.btn-primary {
+  background-color: transparent;
+  border: none;
+  color: #1976d2;
+  padding-left: 30px;
+}
+
+.bg.btn.btn-primary:hover {
+  color: #539ee9;
+}
+
+@media (max-width: 320px) {
+  .h8 {
+    font-size: 11px;
+  }
+
+  .h7 {
+    font-size: 13px;
+  }
+
+  ::placeholder {
+    font-size: 10px;
+  }
+}

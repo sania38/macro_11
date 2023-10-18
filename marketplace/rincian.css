@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #F0CC8E 0%, rgba(240, 204, 142, 0.91) 0.01%, rgba(240, 204, 142, 0.00) 100%) !important;  
+
+}
+nav{
+    background-color: #3D405B;
+    height: 60px;
+    z-index: 8;
+    
+}
+
+nav a img {
+    height: 50px;
+}
+nav .container .collapse ul li a{
+    color: white ;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
+}
+
+nav .container .collapse ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px rgba(255, 251, 251, 0.973);
+}
+nav .collapse a img {
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -150px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.791);
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.351)
+    ;
+    
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.rincian {
+    margin: 200px 200px 40px 200px;
+    width: 819px;
+    height: 550px;
+    background-color: rgba(61, 64, 91, 1);
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+.container .rincian .box1 {
+    background-color: white;
+    width: 60%;
+    height: 18%;
+    margin: 20px 80px 50px 150px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.container .rincian .box1 h1{
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 20px;
+}
+.container .rincian .box1 img {
+    width: 50px;
+    height: 50px;
+}
+.container .rincian .box2{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 250px;
+    margin: 20px 100px 50px 150px;
+    border-radius: 20px;
+}
