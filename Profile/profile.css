@@ -132,6 +132,18 @@ nav .collapse a img {
   background-color: #ff616170;
 }
 
+.lima {
+  background-color: #ff6161;
+  padding: 17px;
+  border-radius: 20px;
+  background-position: center;
+  transition: background-color 0.8 ease;
+  margin-top: 100%;
+  text-align: center;
+  margin-left: -1px;
+}
+
+
 /* sidebar end */
 
 .right {
